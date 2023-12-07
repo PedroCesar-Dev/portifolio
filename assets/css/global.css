@@ -8,8 +8,13 @@
     padding: 1rem;
     border: 1px solid whitesmoke;
     border-radius: 1rem;
-    background: rgb(80,5,184);
-    background: linear-gradient(304deg, rgba(80,5,184,1) 0%, rgba(5,114,184,1) 33%, rgba(5,184,158,1) 66%, rgba(184,155,5,1) 99%);
+    background: linear-gradient(269deg, #5005b8, #0572b8, #05b89e, #b89b05);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 25s ease infinite;
+    -moz-animation: AnimationName 25s ease infinite;
+    -o-animation: AnimationName 25s ease infinite;
+    animation: AnimationName 25s ease infinite;
 }
 .main::before{
     content: '';
@@ -62,4 +67,25 @@ a:hover{
     .main::before,.main::after{
         width: 70vw;
     }
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
