@@ -1,0 +1,58 @@
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+ }
+ 
+ [data-theme="dark"] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+ }
+ .main{
+    border-color: var();
+    background-color: var();
+ }
+ a{
+    color: var(--color-fg);
+ }
+ h3{
+    color: var(--color-fg);
+ }
+ li{
+    color: var(--color-fg);
+ }
+ .skills .softskills ul li{
+    color: var(--color-fg);   
+ }
+ .portfolio li a{
+    color: var(--color-fg);
+    text-decoration: none;
+ }
+ .portfolio li a:hover{
+     color: var(--color-fg);
+     text-decoration: underline;
+  }
+.acordeon.open,.acordeon:hover{
+    background-color: var();
+    border-color: var();
+}
+.acordeon .trigger{
+    color: var();
+}
+ body {
+   background-color: var(--color-bg);
+   color: var(--color-fg);
+   display: grid;
+   min-height: 100vh;
+   place-items: center;
+ }
+ button {
+   font-size: 2rem;
+   font-weight: bold;
+   padding: 0.5rem 1rem;
+   transition: all var(--global-transition-time) ease-in-out;
+   border-radius: 2rem;
+   cursor: pointer;
+   color: var(--color-fg);
+   background-color: var(--color-bg);
+   border: 0.25rem solid var(--color-fg);
+ }

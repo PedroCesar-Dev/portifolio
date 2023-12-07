@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/acordeon.css">
     <link rel="stylesheet" href="./assets/css/languages.css">
-    <link rel="stylesheet" href="./assets/css/portifolio.css">
-    <link rel="stylesheet" href="./assets/css/expericence.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/experience.css">
     <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Quicksand&display=swap" rel="stylesheet">
     <title>Portifólio</title>
 </head>
 <body>
+    <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button>
     <main class="main">
         <header class="header">
-            <img class="foto" src="" alt="Foto Pedro César">        
+            <img class="photo" src="" alt="Foto Pedro César">        
         <h1>Olá, eu sou Pedro César</h1>
             <div class="information">
                 <p class="job">Fullstack Developer</p>
@@ -36,21 +38,22 @@
                 <h2>Skills</h2>
             </button>
             <div class="content">
-                <div class="Skills">
+                <div class="skills">
                     <section class="hardskills">
                         <h3>Hardskills</h3>
                         <ul>
                             <li>
-                                <img class="foto" src="" alt="python">
+                                <img class="foto" src="../portifolio/assets/img/icons/python-svgrepo-com.svg" alt="python">
                             </li>
                             <li>
-                                <img class="foto" src="" alt="html">
+                                <img class="foto" src="../portifolio/assets/img/icons/html5-svgrepo-com.svg" alt="html">
                             </li>
                             <li>
-                                <img class="foto" src="" alt="css">
+                                <img class="foto" src="../portifolio/assets/img/icons/css3-svgrepo-com.svg" alt="css">
                             </li>
                             <li>
-                                <img class="foto" src="" alt="js">
+                                <img class="foto" src="../portifolio/assets/img/icons/node-js-svgrepo-com.svg
+                                " alt="js">
                             </li>
                         </ul>
                     </section>
@@ -78,11 +81,11 @@
             </div>
         </section>
         <section class="acordeon">
-            <button class="acordeon" type="button">
+            <button class="trigger" type="button">
                 <h2>Portifólio</h2>
             </button>
             <div class="content">
-                <ul class="portifolio">
+                <ul class="portfolio">
                     <li>
                         <span class="title github">Consumindo API via CEP</span>
                         <a href="https://github.com/PedroCesar-Dev/Busca-cep" target="_blank">https://github.com/PedroCesar-Dev/Busca-cep</a>

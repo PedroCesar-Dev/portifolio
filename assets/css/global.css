@@ -8,13 +8,8 @@
     padding: 1rem;
     border: 1px solid whitesmoke;
     border-radius: 1rem;
-    background: linear-gradient(269deg, #5005b8, #0572b8, #05b89e, #b89b05);
-    background-size: 800% 800%;
-
-    -webkit-animation: AnimationName 25s ease infinite;
-    -moz-animation: AnimationName 25s ease infinite;
-    -o-animation: AnimationName 25s ease infinite;
-    animation: AnimationName 25s ease infinite;
+    border-width: 3px;
+    background-size: 800% 800%;   
 }
 .main::before{
     content: '';
@@ -42,13 +37,7 @@
     transform: rotate(180deg);
 
 }
-body{
-    background-color: black;
-    color: white;
-}
-
 a{
-    color: white;
     text-decoration: none;
 }
 a:hover{
@@ -59,6 +48,10 @@ a:hover{
     font-family: ;
     src: url();
 } */
+img{
+    width: 50px;
+    height: 50px;
+}
 @media only screen and (min-width:768px){
     .main{
         max-width: 1024px;
@@ -68,24 +61,4 @@ a:hover{
         width: 70vw;
     }
 }
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
-}
+/* https://dev.to/whitep4nth3r/the-best-lightdark-mode-theme-toggle-in-javascript-368f */
