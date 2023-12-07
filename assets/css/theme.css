@@ -1,18 +1,24 @@
 [data-theme="light"] {
     --color-bg: #ffffff;
     --color-fg: #000000;
+    --color-hover: rgb(0, 0, 0);
  }
  
  [data-theme="dark"] {
     --color-bg: #000000;
     --color-fg: #ffffff;
+    --color-color-hover: rgb(66, 66, 219);
+    --filter-svg: white;
  }
  .main{
-    border-color: var();
-    background-color: var();
+    border-color: var(--color-fg);
+    background-color: var(--color-bg);
  }
  a{
     color: var(--color-fg);
+ }
+ a:hover{
+   color: var(--color-fg)
  }
  h3{
     color: var(--color-fg);
@@ -28,15 +34,15 @@
     text-decoration: none;
  }
  .portfolio li a:hover{
-     color: var(--color-fg);
-     text-decoration: underline;
-  }
+   color: var(--color-hover);
+   text-decoration: underline;
+}
 .acordeon.open,.acordeon:hover{
-    background-color: var();
-    border-color: var();
+    background-color: var(--color-bg);
+    border-color: var(--color-hover);
 }
 .acordeon .trigger{
-    color: var();
+    color: var(--color-fg);
 }
  body {
    background-color: var(--color-bg);
