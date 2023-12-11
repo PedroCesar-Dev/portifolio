@@ -5,10 +5,10 @@
 }
 
 .header .photo{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 220px;
     border-radius: 50%;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 
 .header .title {
