@@ -51,7 +51,7 @@
    min-height: 100vh;
    place-items: center;
  }
- button {
+ .tema {
    font-size: 2rem;
    font-weight: bold;
    padding: 0.5rem 1rem;
@@ -61,4 +61,7 @@
    color: var(--color-fg);
    background-color: var(--color-bg);
    border: 0.25rem solid var(--color-fg);
+   position: absolute;
+   right: 10px;
+   bottom: 10px;
  }
