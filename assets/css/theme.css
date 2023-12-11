@@ -1,44 +1,54 @@
 [data-theme="light"] {
-    --color-bg: #ffffff;
-    --color-fg: #000000;
-    --color-hover: rgb(0, 0, 0);
- }
- 
+   --color-bg: #fafafa;
+   --color-card: #e4e5f1;
+   --color-hover: #d2d3db;
+   --color-secondary: #9394a5;
+   --color-fg:  #484b6a;
+   --color-decoration: rgba(35, 155, 235, 0.925);
+} 
  [data-theme="dark"] {
-    --color-bg: #000000;
-    --color-fg: #ffffff;
-    --color-color-hover: rgb(66, 66, 219);
-    --filter-svg: white;
+    --color-bg: #18191A;
+    --color-card: #242526;
+    --color-hover: #3A3B3C;
+    --color-secondary: #B0B3B8;
+    --color-fg:  #e4e6eb;
+    --color-decoration: red;
  }
  .main{
     border-color: var(--color-fg);
-    background-color: var(--color-bg);
+    background-color: var(--color-card);
  }
  a{
     color: var(--color-fg);
+    text-decoration: none;
  }
  a:hover{
-   color: var(--color-fg)
+    color: var(--color-fg);
+    text-decoration: underline;
+    text-decoration-color: var(--color-decoration);
  }
  h3{
     color: var(--color-fg);
  }
  li{
-    color: var(--color-fg);
+    color: var(--color-secondary);
  }
+
  .skills .softskills ul li{
-    color: var(--color-fg);   
+    color: var(--color-secondary);   
  }
  .portfolio li a{
     color: var(--color-fg);
     text-decoration: none;
  }
  .portfolio li a:hover{
-   color: var(--color-hover);
+   color: var(--color-secondary);
    text-decoration: underline;
+   text-decoration-color: var(--color-decoration);
 }
+
 .acordeon.open,.acordeon:hover{
-    background-color: var(--color-bg);
+    background-color: var(--color-card);
     border-color: var(--color-hover);
 }
 .acordeon .trigger{
